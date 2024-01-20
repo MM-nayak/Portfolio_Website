@@ -7,7 +7,7 @@
 
   /*========== Colors ==========*/
   /* Change favorite color */
-  --hue-color: 22;
+  --hue-color: 605;
   /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
   /* HSL color mode */
@@ -516,28 +516,27 @@ img {
   background-color: var(--first-color);
 }
 
-.skills__html {
+.skills__ApiDevelopment {
   width: 70%;
 }
 
-.skills__css {
-  width: 60%;
+.skills__SpringFramework {
+  width: 70%;
 }
 
-.skills__javascript {
+.skills__CoreJava {
+  width: 80%;
+}
+.skills__html {
   width: 50%;
 }
 
-.skills__api {
-  width: 80%;
+.skills__css {
+  width: 40%;
 }
 
-.skills__java {
-  width: 80%;
-}
-
-.skills__python {
-  width: 60%;
+.skills__javascript {
+  width: 30%;
 }
 
 .skills__mysql {
