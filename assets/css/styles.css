@@ -450,7 +450,7 @@ img {
 
 
 /*==================== SKILLS ====================*/
-.skills__container {
+/* .skills__container {
   row-gap: 0;
 }
 
@@ -516,35 +516,44 @@ img {
   background-color: var(--first-color);
 }
 
-.skills__ApiDevelopment {
-  width: 70%;
-}
-
 .skills__SpringFramework {
-  width: 70%;
-}
-
-.skills__CoreJava {
-  width: 80%;
-}
-.skills__html {
-  width: 50%;
-}
-
-.skills__css {
-  width: 40%;
-}
-
-.skills__javascript {
-  width: 30%;
-}
-
-.skills__mysql {
   width: 90%;
 }
 
-.skills__oracle {
+.skills__CoreJava {
+  width: 85%;
+}
+
+.skills__Microservices {
   width: 80%;
+}
+
+.skills__RestApis {
+  width: 80%;
+}
+
+.skills__Jwt {
+  width: 80%;
+}
+
+.skills__RabbitMq {
+  width: 75%;
+}
+
+.skills__Junit {
+  width: 85%;
+}
+
+.skills__mysql {
+  width: 85%;
+}
+
+.skills__redis {
+  width: 75%;
+}
+
+.skills__mongo {
+  width: 70%;
 }
 
 .skills__close .skills__list {
@@ -559,6 +568,196 @@ img {
 
 .skills__open .skills__arrow {
   transform: rotate(-180deg);
+} */
+
+
+/* Skills Section */
+.skills__container {
+  row-gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.tech-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tech-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  background: var(--container-color);
+  border: 2px solid var(--first-color-lighter);
+  border-radius: 2rem;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tech-badge:hover {
+  transform: translateY(-3px);
+  border-color: var(--first-color);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  background: var(--first-color);
+  color: #fff;
+}
+
+/* Individual badge colors (optional - remove if you prefer uniform styling) */
+.tech-badge.java:hover {
+  background: #f89820;
+  border-color: #f89820;
+}
+
+.tech-badge.spring:hover {
+  background: #6db33f;
+  border-color: #6db33f;
+}
+
+.tech-badge.mysql:hover {
+  background: #4479a1;
+  border-color: #4479a1;
+}
+
+.tech-badge.redis:hover {
+  background: #dc382d;
+  border-color: #dc382d;
+}
+
+.tech-badge.rabbitmq:hover {
+  background: #ff6600;
+  border-color: #ff6600;
+}
+
+.tech-badge.aws:hover {
+  background: #232f3e;
+  border-color: #232f3e;
+}
+
+.tech-badge.jwt:hover {
+  background: #000000;
+  border-color: #000000;
+}
+
+.tech-badge.microservices:hover {
+  background: var(--first-color);
+  border-color: var(--first-color);
+}
+
+.tech-badge.git:hover {
+  background: #f05032;
+  border-color: #f05032;
+}
+
+.tech-badge.github:hover {
+  background: #181717;
+  border-color: #181717;
+}
+
+.tech-badge.junit:hover {
+  background: #25a162;
+  border-color: #25a162;
+}
+
+.tech-badge.mockito:hover {
+  background: #78b13f;
+  border-color: #78b13f;
+}
+
+.tech-badge.keycloak:hover {
+  background: #4d4d4d;
+  border-color: #4d4d4d;
+}
+
+.tech-badge.mongodb:hover {
+  background: #47a248;
+  border-color: #47a248;
+}
+
+.tech-badge.rest:hover {
+  background: #61dafb;
+  border-color: #61dafb;
+  color: #000;
+}
+
+.tech-badge.oauth:hover {
+  background: #326ce5;
+  border-color: #326ce5;
+}
+
+.tech-badge.sse:hover {
+  background: #ff4b4b;
+  border-color: #ff4b4b;
+}
+
+.tech-badge.spring-security:hover {
+  background: #6db33f;
+  border-color: #6db33f;
+}
+
+.tech-badge.spring-jpa:hover {
+  background: #6db33f;
+  border-color: #6db33f;
+}
+
+.tech-badge.lld:hover {
+  background: var(--first-color);
+  border-color: var(--first-color);
+}
+.tech-badge.responsive:hover {
+  background: #61dafb;
+  border-color: #61dafb;
+  color: #000;
+}
+
+.tech-badge.docker:hover {
+  background: #2496ed;
+  border-color: #2496ed;
+}
+
+.tech-badge.agile:hover {
+  background: #0052cc;
+  border-color: #0052cc;
+}
+
+.tech-badge.debugging:hover {
+  background: #ff6b6b;
+  border-color: #ff6b6b;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .tech-skills {
+    gap: 0.75rem;
+    padding: 1.5rem 0;
+  }
+  
+  .tech-badge {
+    padding: 0.6rem 1rem;
+    font-size: var(--small-font-size);
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .tech-skills {
+    gap: 0.5rem;
+  }
+  
+  .tech-badge {
+    padding: 0.5rem 0.75rem;
+    font-size: var(--smaller-font-size);
+  }
 }
 
 /*==================== QUALIFICATION ====================*/
@@ -795,7 +994,7 @@ img {
 
 
 /*==================== PROJECT IN MIND ====================*/
-.project {
+/* .project {
   text-align: center;
 }
 
@@ -821,7 +1020,7 @@ img {
 .project__img {
   width: 200px;
   justify-self: center;
-}
+} */
 
 /*==================== TESTIMONIAL ====================*/
 
